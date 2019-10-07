@@ -10,6 +10,7 @@
 #include <QTextCodec>
 #include <QTranslator>
 #include <QtPlugin>
+#include <QTextStream>
 
 #include "cmsys/CommandLineArguments.hxx"
 #include "cmsys/Encoding.hxx"
@@ -225,6 +226,13 @@ int main(int argc, char** argv)
     }
   }
 
+  // setting dark style
+  QString path = ":qdarkstyle/darkstyle/style.qss";
+  QFile f(path);
+  f.open(QFile::ReadOnly | QFile::Text);
+  QTextStream in(&f);
+  qApp->setStyleSheet(in.readAll());
+  
   return QApplication::exec();
 }
 

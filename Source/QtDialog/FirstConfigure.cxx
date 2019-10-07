@@ -421,6 +421,7 @@ void ToolchainCompilerSetup::setToolchainFile(const QString& t)
 
 FirstConfigure::FirstConfigure()
 {
+  setWizardStyle(QWizard::ClassicStyle);
   // this->setOption(QWizard::HaveFinishButtonOnEarlyPages, true);
   this->mStartCompilerSetupPage = new StartCompilerSetup(this);
   this->setPage(Start, this->mStartCompilerSetupPage);
