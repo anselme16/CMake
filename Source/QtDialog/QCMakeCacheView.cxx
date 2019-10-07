@@ -262,9 +262,9 @@ void QCMakeCacheModel::setProperties(const QCMakePropertyList& props)
       parentItems.append(
         new QStandardItem(key.isEmpty() ? tr("Ungrouped Entries") : key));
       parentItems.append(new QStandardItem());
-      parentItems[0]->setData(QBrush(QColor(255, 100, 100)),
+      parentItems[0]->setData(QBrush(QColor(115,30,30)),
                               Qt::BackgroundColorRole);
-      parentItems[1]->setData(QBrush(QColor(255, 100, 100)),
+      parentItems[1]->setData(QBrush(QColor(115,30,30)),
                               Qt::BackgroundColorRole);
       parentItems[0]->setData(1, GroupRole);
       parentItems[1]->setData(1, GroupRole);
@@ -356,9 +356,9 @@ void QCMakeCacheModel::setPropertyData(const QModelIndex& idx1,
   }
 
   if (isNew) {
-    this->setData(idx1, QBrush(QColor(255, 100, 100)),
+    this->setData(idx1, QBrush(QColor(115,30,30)),
                   Qt::BackgroundColorRole);
-    this->setData(idx2, QBrush(QColor(255, 100, 100)),
+    this->setData(idx2, QBrush(QColor(115,30,30)),
                   Qt::BackgroundColorRole);
   }
 }
