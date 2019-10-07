@@ -1,5 +1,13 @@
-CMake
+CMake-dark
 *****
+
+Fork Information
+============
+
+This is a slightly modified version of CMake that simply changes the style of cmake-gui to dark, using this very nice Qt dark style : https://github.com/ColinDuquesnoy/QDarkStyleSheet
+
+I do not provide pre-compiled binaries yet, so you have to compile it yourself.
+Say what you want, but i think compiling CMake with CMake is pretty satisfying anyway.
 
 Introduction
 ============
